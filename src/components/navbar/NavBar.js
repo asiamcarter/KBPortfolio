@@ -53,75 +53,72 @@ export default class NavBar extends Component {
                     About
                   </Link>
                 </li>
-                <li>
-                  <img
-                    src="https://i.pinimg.com/75x75_RS/7c/84/e9/7c84e98ee5fddce8d2e5e7c34b584175.jpg"
-                    alt="feet"
-                  />
-                </li>
               </ul>
               {/* instagram and share div */}
+              <div className="ig-and-share-div">
+                <a
+                  href="https://www.instagram.com/kyle_baker_1993/"
+                  target="blank"
+                  className="ig-icon"
+                >
+                  <img
+                    src="https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png"
+                    width="20"
+                    height="20"
+                    alt="Instagram link"
+                  />
+                </a>
 
-              <a
-                href="https://www.instagram.com/kyle_baker_1993/"
-                target="blank"
-              >
-                <img
-                  src="https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png"
-                  width="20"
-                  height="20"
-                  alt="Instagram link"
-                />
-              </a>
-
-              <div class="dropdown">
-                <button class="dropbtn">Share</button>
-                <div class="dropdown-content">
-                  <div
-                    class="fb-share-button"
-                    data-href="https://kylebakerart.com"
-                    data-size="small"
-                  >
+                <div className="dropdown">
+                  <button className="dropbtn">Share</button>
+                  <div className="dropdown-content">
+                    <div
+                      className="fb-share-button"
+                      data-href="https://kylebakerart.com"
+                      data-size="small"
+                    >
+                      <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkylebakerart.com%2F&amp;src=sdkpreparse"
+                        className="fb-xfbml-parse-ignore"
+                      >
+                        Facebook
+                      </a>
+                    </div>
                     <a
+                      className="nav-link"
+                      href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fkylebakerart.com&text=:%20http%3A%2F%2Fkylebakerart.com"
                       rel="noopener noreferrer"
                       target="_blank"
-                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkylebakerart.com%2F&amp;src=sdkpreparse"
-                      class="fb-xfbml-parse-ignore"
+                      title="Tweet"
+                      onClick={this.twitterClick}
                     >
-                      Facebook
+                      Twitter
+                    </a>
+                    <a
+                      className="nav-link"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href="https://www.pinterest.com/pin/create/link/?url=www.kylebakerart.com"
+                      data-pin-do="buttonBookmark"
+                    >
+                      Pinterest
+                    </a>
+                    <a
+                      className="nav-link"
+                      href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fkylebakerart.com&quote=&s="
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      title="Post to Tumblr"
+                      onClick={this.tumblrClick}
+                    >
+                      Tumblr
                     </a>
                   </div>
-                  <a
-                    className="nav-link"
-                    href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fkylebakerart.com&text=:%20http%3A%2F%2Fkylebakerart.com"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    title="Tweet"
-                    onClick={this.twitterClick}
-                  >
-                    Twitter
-                  </a>
-                  <a
-                    className="nav-link"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    href="https://www.pinterest.com/pin/create/link/?url=www.kylebakerart.com"
-                    data-pin-do="buttonBookmark"
-                  >
-                    Pinterest
-                  </a>
-                  <a
-                    className="nav-link"
-                    href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fkylebakerart.com&quote=&s="
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    title="Post to Tumblr"
-                    onClick={this.tumblrClick}
-                  >
-                    Tumblr
-                  </a>
                 </div>
               </div>
+              <p className="copyright">Copyright @ All rights reserved</p>
             </div>
           </aside>
         </div>

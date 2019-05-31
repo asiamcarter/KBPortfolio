@@ -38,3 +38,10 @@
     color: black;
   }
 }
+.applicationviews-div {
+  display: inline-flex;
+}
+
+div#content {
+  margin-left: 17%;
+}

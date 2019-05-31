@@ -1,38 +1,20 @@
 #nav-link {
   text-decoration: none;
   color: black;
+  display: flex;
+  margin-top: 10px;
 }
 
 .kyle-baker-link {
   font-size: 60px;
   font-weight: bold;
   line-height: 100%;
-  margin-bottom: 40px;
-}
-
-ul.share-buttons {
-  list-style: none;
-  padding: 0;
-}
-
-ul.share-buttons li {
-  display: inline;
-}
-
-ul.share-buttons .sr-only {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .dropbtn {
-  background-color: #4caf50;
-  color: white;
+  background-color: transparent;
+  color: blsck;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -40,6 +22,7 @@ ul.share-buttons .sr-only {
 
 .dropdown {
   position: relative;
+  margin-left: 50px;
   display: inline-block;
 }
 
@@ -65,8 +48,24 @@ ul.share-buttons .sr-only {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  bottom: 0;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #ddd;
+}
+
+.ig-and-share-div {
+  display: inline-flex;
+  align-items: baseline;
+  padding-top: 10vh;
+}
+
+.ig-icon {
+  align-self: baseline;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-size: 10px;
 }
