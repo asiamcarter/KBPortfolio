@@ -1,10 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 export default class Home extends React.Component {
   render() {
-    return (
-      <div className="component-app">
-        <h1>HOME HERE!</h1>
-      </div>
-    );
+    return <div>{/* <h1>HOME HERE!</h1> */}</div>;
   }
 }
