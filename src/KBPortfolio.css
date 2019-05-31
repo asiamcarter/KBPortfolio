@@ -3,14 +3,17 @@
   width: 100%;
   padding: 10px;
   letter-spacing: 10px;
-  font-size: 100px;
-  font-weight: 90;
+  font-size: 150px;
+  font-weight: 54;
   color: black;
 }
 
 .intro-button {
+  margin-top: 150px;
   border: none;
   text-decoration: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .intro-button:hover {
@@ -22,4 +25,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .intro-text {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 10px;
+    font-size: 90px;
+    font-weight: 54;
+    color: black;
+  }
 }
