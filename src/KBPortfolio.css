@@ -1,0 +1,25 @@
+.intro-text {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 10px;
+  font-size: 100px;
+  font-weight: 90;
+  color: black;
+}
+
+.intro-button {
+  border: none;
+  text-decoration: none;
+}
+
+.intro-button:hover {
+  border-bottom: 2px solid black;
+}
+
+.intro-image-div {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
