@@ -14,16 +14,6 @@ export default class NavBar extends Component {
     return false;
   };
 
-  pinterestClick = () => {
-    window.open(
-      "http://pinterest.com/pin/create/button/?url=" +
-        encodeURIComponent(document.URL) +
-        "&description=" +
-        encodeURIComponent(document.title)
-    );
-    return false;
-  };
-
   tumblrClick = () => {
     "window.open('http://www.tumblr.com/share?v=3&u=' + encodeURIComponent(document.URL) + '&quote=' +  encodeURIComponent(document.title)); return false;";
   };
@@ -62,6 +52,12 @@ export default class NavBar extends Component {
                   <Link id="nav-link" className="nav-link pl-0" to="/About">
                     About
                   </Link>
+                </li>
+                <li>
+                  <img
+                    src="https://i.pinimg.com/75x75_RS/7c/84/e9/7c84e98ee5fddce8d2e5e7c34b584175.jpg"
+                    alt="feet"
+                  />
                 </li>
               </ul>
               {/* instagram and share div */}
@@ -107,11 +103,10 @@ export default class NavBar extends Component {
                   </a>
                   <a
                     className="nav-link"
-                    href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fkylebakerart.com&description="
                     rel="noopener noreferrer"
                     target="_blank"
-                    title="Pin it"
-                    onClick={this.pinterestClick}
+                    href="https://www.pinterest.com/pin/create/link/?url=www.kylebakerart.com"
+                    data-pin-do="buttonBookmark"
                   >
                     Pinterest
                   </a>
